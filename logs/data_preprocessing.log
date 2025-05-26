@@ -468,3 +468,33 @@
 2025-05-26 22:56:45,362 - data_preprocessing - DEBUG - Duplicates removed
 2025-05-26 22:56:47,574 - data_preprocessing - DEBUG - Text column transformed
 2025-05-26 22:56:47,593 - data_preprocessing - DEBUG - Processed data saved to ./data\interim
+2025-05-26 23:31:08,893 - data_preprocessing - DEBUG - Data loaded properly
+2025-05-26 23:31:08,894 - data_preprocessing - DEBUG - Starting preprocessing for DataFrame
+2025-05-26 23:31:08,897 - data_preprocessing - DEBUG - Target column encoded
+2025-05-26 23:31:08,937 - data_preprocessing - DEBUG - Duplicates removed
+2025-05-26 23:31:20,456 - data_preprocessing - DEBUG - Text column transformed
+2025-05-26 23:31:20,456 - data_preprocessing - DEBUG - Starting preprocessing for DataFrame
+2025-05-26 23:31:20,458 - data_preprocessing - DEBUG - Target column encoded
+2025-05-26 23:31:20,459 - data_preprocessing - DEBUG - Duplicates removed
+2025-05-26 23:31:22,802 - data_preprocessing - DEBUG - Text column transformed
+2025-05-26 23:31:22,819 - data_preprocessing - DEBUG - Processed data saved to ./data\interim
+2025-05-26 23:34:43,088 - data_preprocessing - DEBUG - Data loaded properly
+2025-05-26 23:34:43,088 - data_preprocessing - DEBUG - Starting preprocessing for DataFrame
+2025-05-26 23:34:43,089 - data_preprocessing - DEBUG - Target column encoded
+2025-05-26 23:34:43,092 - data_preprocessing - DEBUG - Duplicates removed
+2025-05-26 23:34:55,120 - data_preprocessing - DEBUG - Text column transformed
+2025-05-26 23:34:55,121 - data_preprocessing - DEBUG - Starting preprocessing for DataFrame
+2025-05-26 23:34:55,122 - data_preprocessing - DEBUG - Target column encoded
+2025-05-26 23:34:55,123 - data_preprocessing - DEBUG - Duplicates removed
+2025-05-26 23:34:56,712 - data_preprocessing - DEBUG - Text column transformed
+2025-05-26 23:34:56,723 - data_preprocessing - DEBUG - Processed data saved to ./data\interim
+2025-05-26 23:35:53,030 - data_preprocessing - DEBUG - Data loaded properly
+2025-05-26 23:35:53,030 - data_preprocessing - DEBUG - Starting preprocessing for DataFrame
+2025-05-26 23:35:53,031 - data_preprocessing - DEBUG - Target column encoded
+2025-05-26 23:35:53,034 - data_preprocessing - DEBUG - Duplicates removed
+2025-05-26 23:36:04,954 - data_preprocessing - DEBUG - Text column transformed
+2025-05-26 23:36:04,954 - data_preprocessing - DEBUG - Starting preprocessing for DataFrame
+2025-05-26 23:36:04,955 - data_preprocessing - DEBUG - Target column encoded
+2025-05-26 23:36:04,956 - data_preprocessing - DEBUG - Duplicates removed
+2025-05-26 23:36:06,824 - data_preprocessing - DEBUG - Text column transformed
+2025-05-26 23:36:06,837 - data_preprocessing - DEBUG - Processed data saved to ./data\interim
