@@ -14,3 +14,13 @@
 2025-05-26 21:41:07,986 - data_ingestion - DEBUG - Data preprocessed successfully
 2025-05-26 21:41:08,005 - data_ingestion - DEBUG - Data saved successfully to ./data\raw
 2025-05-26 21:41:08,006 - data_ingestion - INFO - Data ingestion process completed successfully.
+2025-05-26 22:48:01,019 - data_ingestion - DEBUG - Parameters retrieved from params.yaml
+2025-05-26 22:48:02,578 - data_ingestion - DEBUG - Data loaded successfully from https://raw.githubusercontent.com/ArpitaMallik/Datasets/refs/heads/main/spam.csv
+2025-05-26 22:48:02,666 - data_ingestion - DEBUG - Data preprocessed successfully
+2025-05-26 22:48:02,719 - data_ingestion - DEBUG - Data saved successfully to ./data\raw
+2025-05-26 22:48:02,720 - data_ingestion - INFO - Data ingestion process completed successfully.
+2025-05-26 22:52:02,948 - data_ingestion - DEBUG - Parameters retrieved from params.yaml
+2025-05-26 22:52:03,576 - data_ingestion - DEBUG - Data loaded successfully from https://raw.githubusercontent.com/ArpitaMallik/Datasets/refs/heads/main/spam.csv
+2025-05-26 22:52:03,652 - data_ingestion - DEBUG - Data preprocessed successfully
+2025-05-26 22:52:03,721 - data_ingestion - DEBUG - Data saved successfully to ./data\raw
+2025-05-26 22:52:03,722 - data_ingestion - INFO - Data ingestion process completed successfully.

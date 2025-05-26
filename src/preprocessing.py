@@ -6,10 +6,21 @@ from nltk.stem.porter import PorterStemmer
 from nltk.corpus import stopwords
 import string
 import nltk
-nltk.data.path.append("C:/Users/Arpita mallik/AppData/Roaming/nltk_data")
-nltk.download('stopwords')
-nltk.download('punkt')
+# nltk.data.path.append("C:/Users/Arpita mallik/AppData/Roaming/nltk_data")
+# nltk.download('stopwords')
+# nltk.download('punkt')
 from nltk.data import find
+
+
+nltk_data_path = os.path.expanduser('~/AppData/Roaming/nltk_data')
+if os.path.exists(nltk_data_path):
+    nltk.data.path.append(nltk_data_path)
+else:
+    raise RuntimeError(
+        f"Expected NLTK data at {nltk_data_path} not found. Run `python download_nltk.py` before running DVC."
+    )
+
+
 
 try:
     find('tokenizers/punkt')

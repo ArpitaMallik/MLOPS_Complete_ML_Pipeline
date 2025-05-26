@@ -1,8 +1,6 @@
-# import nltk
-# nltk.download('punkt')
-# nltk.download('stopwords')
-# nltk.download('omw-1.4')  # Optional but safe
-# nltk.download('wordnet')  # Optional if you use WordNet lemmatizer
-from nltk.tokenize import word_tokenize
+# download_nltk.py
+import nltk
 
-print(word_tokenize("This is a test sentence."))
+nltk.download('stopwords')
+nltk.download('punkt')
+nltk.download('punkt_tab')  # Fixes your current issue
