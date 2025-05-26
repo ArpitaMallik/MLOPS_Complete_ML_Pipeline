@@ -6,26 +6,37 @@ from nltk.stem.porter import PorterStemmer
 from nltk.corpus import stopwords
 import string
 import nltk
+nltk.data.path.append("C:/Users/Arpita mallik/AppData/Roaming/nltk_data")
 nltk.download('stopwords')
 nltk.download('punkt')
+from nltk.data import find
 
+try:
+    find('tokenizers/punkt')
+    find('corpora/stopwords')
+except LookupError as e:
+    raise RuntimeError(
+        "Required NLTK data not found. Please run the following in Python shell before running DVC:\n"
+        ">>> import nltk\n>>> nltk.download('stopwords')\n>>> nltk.download('punkt')"
+    )
+
+
+
+# Ensure the "logs" directory exists
 log_dir = 'logs'
 os.makedirs(log_dir, exist_ok=True)
 
-#creating a logger object
+# Setting up logger
 logger = logging.getLogger('data_preprocessing')
-logger.setLevel("DEBUG")
+logger.setLevel('DEBUG')
 
-#creating a console handler
 console_handler = logging.StreamHandler()
-console_handler.setLevel("DEBUG")
+console_handler.setLevel('DEBUG')
 
-#creating a file handler
 log_file_path = os.path.join(log_dir, 'data_preprocessing.log')
 file_handler = logging.FileHandler(log_file_path)
-file_handler.setLevel("DEBUG")
+file_handler.setLevel('DEBUG')
 
-#creating a formatter
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 console_handler.setFormatter(formatter)
 file_handler.setFormatter(formatter)
@@ -33,12 +44,10 @@ file_handler.setFormatter(formatter)
 logger.addHandler(console_handler)
 logger.addHandler(file_handler)
 
-
 def transform_text(text):
-    """Transform text by removing punctuation, converting to lowercase, removing stopwords, and stemming."""
-    
-    ps = PorterStemmer()
-
+    """
+    Transforms the input text by converting it to lowercase, tokenizing, removing stopwords and punctuation, and stemming.
+    """
     ps = PorterStemmer()
     # Convert to lowercase
     text = text.lower()
@@ -52,7 +61,6 @@ def transform_text(text):
     text = [ps.stem(word) for word in text]
     # Join the tokens back into a single string
     return " ".join(text)
-
 
 def preprocess_df(df, text_column='text', target_column='target'):
     """

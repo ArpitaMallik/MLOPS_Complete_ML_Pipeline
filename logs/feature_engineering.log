@@ -5,3 +5,10 @@
 2025-05-26 01:31:50,551 - feature_engineering - DEBUG - tfidf applied and data transformed
 2025-05-26 01:31:50,743 - feature_engineering - DEBUG - Data saved to ./data\processed\train_tfidf.csv
 2025-05-26 01:31:50,768 - feature_engineering - DEBUG - Data saved to ./data\processed\test_tfidf.csv
+2025-05-26 14:15:30,643 - feature_engineering - ERROR - Unexpected error occurred while loading the data: [Errno 2] No such file or directory: './data/interim/train_processed.csv'
+2025-05-26 14:15:30,644 - feature_engineering - ERROR - Failed to complete the feature engineering process: [Errno 2] No such file or directory: './data/interim/train_processed.csv'
+2025-05-26 14:16:10,489 - feature_engineering - DEBUG - Data loaded and NaNs filled from ./data/interim/train_processed.csv
+2025-05-26 14:16:10,507 - feature_engineering - DEBUG - Data loaded and NaNs filled from ./data/interim/test_processed.csv
+2025-05-26 14:16:10,580 - feature_engineering - DEBUG - tfidf applied and data transformed
+2025-05-26 14:16:10,754 - feature_engineering - DEBUG - Data saved to ./data\processed\train_tfidf.csv
+2025-05-26 14:16:10,786 - feature_engineering - DEBUG - Data saved to ./data\processed\test_tfidf.csv
